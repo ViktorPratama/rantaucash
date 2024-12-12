@@ -10,7 +10,7 @@ const RoomList = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/rooms/kamar');
+        const response = await axios.get('https://backend-o47f.vercel.app/api/rooms/kamar');
         console.log('Rooms data:', response.data);  // Check if data is received
         setRooms(response.data);
       } catch (error) {
