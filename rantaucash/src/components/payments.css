@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #2575fc;
+  --secondary-color: #6a11cb;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+  --success-color: #4caf50;
+  --danger-color: #f44336;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Table Container */
+.TableContainer {
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+/* Table Styles */
+.MuiTable-root {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: auto;
+}
+
+.MuiTableHead-root th {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.MuiTableCell-root {
+  padding: 10px 14px;
+  text-align: center;
+  color: var(--dark-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.MuiTableCell-root:first-child {
+  text-align: left;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  padding: 8px 14px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.MuiButton-root:hover {
+  transform: scale(1.05);
+}
+
+.MuiButton-primary {
+  background-color: var(--primary-color);
+}
+
+.MuiButton-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.MuiButton-secondary {
+  background-color: var(--secondary-color);
+}
+
+.MuiButton-secondary:hover {
+  background-color: darken(var(--secondary-color), 10%);
+}
+
+/* Button Group Styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .MuiTable-root {
+    font-size: 12px;
+  }
+
+  .MuiTableCell-root {
+    padding: 8px 10px;
+  }
+
+  .MuiButton-root {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .TableContainer {
+    padding: 10px;
+  }
+
+  .MuiTable-root {
+    font-size: 10px;
+  }
+
+  .MuiTableCell-root {
+    padding: 6px 8px;
+  }
+
+  .MuiButton-root {
+    font-size: 8px;
+    padding: 4px 8px;
+  }
+}

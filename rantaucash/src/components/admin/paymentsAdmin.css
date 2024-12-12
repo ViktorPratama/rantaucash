@@ -1,0 +1,59 @@
+/* Basic Styles for the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+/* Table container styles */
+.TableContainer {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Make the table responsive on small screens */
+@media (max-width: 768px) {
+  /* Adjust table styling for smaller screens */
+  .MuiTable-root {
+    table-layout: auto; /* Makes table columns adjust to content */
+    width: 100%;
+  }
+
+  /* Adjust font size of table cells */
+  .MuiTableCell-root {
+    font-size: 14px;
+    padding: 8px; /* Reduce padding */
+  }
+
+  /* Adjust button size for smaller screens */
+  .MuiButton-root {
+    font-size: 12px; /* Smaller button text */
+    padding: 6px 12px; /* Smaller padding */
+  }
+
+  /* Make the table scrollable horizontally */
+  .MuiTableContainer-root {
+    overflow-x: auto;
+  }
+
+  /* Stack buttons on top of each other in mobile view */
+  .MuiGrid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Adjust Paper background and padding */
+  .MuiPaper-root {
+    padding: 10px;
+  }
+
+  /* Increase button size on smaller screens */
+  .MuiButton-contained {
+    width: 100%; /* Full-width button */
+    margin-bottom: 10px;
+  }
+}

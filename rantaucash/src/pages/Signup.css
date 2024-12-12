@@ -1,0 +1,124 @@
+/* Basic Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7b42f6, #b243f4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Signup Container Styles */
+  .signup-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    }
+  
+  /* Welcome Section Styling */
+  .welcome-section {
+    flex: 1;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcome-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .welcome-section p {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Signup Section Styling */
+  .signup-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .signup-section h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .signup-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-links {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  .additional-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .additional-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+      padding: 20px;
+      margin: 0 10px;
+    }
+  
+    .welcome-section,
+    .signup-section {
+      padding: 20px;
+    }
+  }
+  

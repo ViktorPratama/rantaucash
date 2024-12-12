@@ -1,0 +1,35 @@
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  color: #5aacff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+}
