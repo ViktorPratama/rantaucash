@@ -11,7 +11,7 @@ const Dashboard = () => {
       const token = localStorage.getItem('token');
       try {
         // Mengambil data profil pengguna
-        const userResponse = await axios.get('http://localhost:5000/api/users/profile', {
+        const userResponse = await axios.get('https://backend-o47f.vercel.app/api/users/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUserData(userResponse.data.user);
