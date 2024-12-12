@@ -18,7 +18,7 @@ const Navbar = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/payments/notifications');
+        const response = await axios.get('https://backend-o47f.vercel.app/api/payments/notifications');
         setNotifications(response.data.count); // Ambil jumlah notifikasi
       } catch (error) {
         console.error('Error fetching notifications:', error);
