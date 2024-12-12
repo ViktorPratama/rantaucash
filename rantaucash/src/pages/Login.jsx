@@ -102,7 +102,7 @@ const Login = () => {
           <button type="submit">Login</button>
         </form>
         <div className="additional-links">
-          <a href="/signup">New User? Signup</a>
+          <a href="https://rantaucash-bi4w36bbg-victorpratamas-projects.vercel.app/signup">New User? Signup</a>
           <a href="/forgot-password">Forgot your password?</a>
         </div>
       </div>
