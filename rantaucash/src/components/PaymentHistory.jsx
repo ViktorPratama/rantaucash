@@ -10,7 +10,7 @@ const PaymentHistory = () => {
   useEffect(() => {
     const fetchPayments = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/payments/payments');
+        const response = await axios.get('https://backend-o47f.vercel.app/api/payments/payments');
         console.log('Payments fetched:', response.data); // Memeriksa data pembayaran yang diterima
         setPayments(response.data);
       } catch (error) {
