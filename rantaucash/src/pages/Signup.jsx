@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/register', {
+      await axios.post('https://backend-o47f.vercel.app/api/users/register', {
         name,
         email,
         password,
