@@ -11,7 +11,7 @@ const PaymentQR = () => {
     useEffect(() => {
         const fetchPaymentDetails = async () => {
           try {
-            const response = await axios.get(`http://localhost:5000/api/payments/pay/${id}`);
+            const response = await axios.get(`https://backend-o47f.vercel.app/api/payments/pay/${id}`);
             console.log('Response:', response.data); // Debugging
             setPaymentDetails(response.data);
           } catch (error) {
